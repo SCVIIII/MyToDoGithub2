@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>bing.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\login.png" />
+    <None Remove="Images\user.jpg" />
+    <None Remove="Images\wind.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bing.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="5.0.1-ci619" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Prism.DryIoc" Version="9.0.401-pre" />
+    <PackageReference Include="RestSharp" Version="112.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyToDo.Api\MyToDo.Api.csproj" />
+    <ProjectReference Include="..\MyToDo.Shared\MyToDo.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\login.png" />
+    <Resource Include="Images\user.jpg" />
+    <Resource Include="Images\wind.png" />
+  </ItemGroup>
+
+</Project>
